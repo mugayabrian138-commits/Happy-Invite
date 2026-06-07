@@ -374,14 +374,8 @@
   <div class="rsvp-section">
     <p class="rsvp-label">so what do you say, Happy? 👀</p>
     <div class="rsvp-buttons">
-      <button class="btn btn-yes" onclick="handleYes()">Yes omg yes!! 🎉</button>
-      <button class="btn btn-maybe" onclick="handleMaybe()">Maybe... (say yes) 🥺</button>
-    </div>
-    <div class="response-msg" id="yes-msg">
-      YESSS!! 🥳🎊 Can't wait, Happy!!! ❤️🍗🍚
-    </div>
-    <div class="response-msg" id="maybe-msg">
-      "maybe" means yes and we both know it 😏💛
+      <a class="btn btn-yes" href="https://wa.me/255753345385?text=YES%20omg%20YES!!%20%F0%9F%8E%89%F0%9F%8D%97%F0%9F%8D%9A%20I%27m%20coming!!%20Can%27t%20wait!!%20%E2%9D%A4%EF%B8%8F%F0%9F%92%9B" style="text-decoration:none;display:inline-block;">Yes omg yes!! 🎉</a>
+      <a class="btn btn-maybe" href="https://wa.me/255753345385?text=Okay%20okay...%20maybe%20YES%20%F0%9F%98%8F%F0%9F%A5%BA%20When%20are%20we%20doing%20this%3F%20%F0%9F%8D%97%F0%9F%8D%9A%F0%9F%92%9B" style="text-decoration:none;display:inline-block;">Maybe... (say yes) 🥺</a>
     </div>
   </div>
 
@@ -409,24 +403,6 @@
   for (let i = 0; i < 12; i++) setTimeout(spawnFloater, i * 400);
   setInterval(spawnFloater, 1500);
 
-  function handleYes() {
-    document.getElementById('yes-msg').style.display = 'block';
-    document.getElementById('maybe-msg').style.display = 'none';
-    for (let i = 0; i < 20; i++) setTimeout(spawnFloater, i * 80);
-    setTimeout(() => {
-      const msg = encodeURIComponent("YES omg YES!! 🎉🍗🍚 I'm coming!! Can't wait!! ❤️💛");
-      window.open('https://wa.me/255753345385?text=' + msg, '_blank');
-    }, 800);
-  }
-
-  function handleMaybe() {
-    document.getElementById('maybe-msg').style.display = 'block';
-    document.getElementById('yes-msg').style.display = 'none';
-    setTimeout(() => {
-      const msg = encodeURIComponent("Okay okay... maybe YES 😏🥺 When are we doing this? 🍗🍚💛");
-      window.open('https://wa.me/255753345385?text=' + msg, '_blank');
-    }, 800);
-  }
 </script>
 </body>
 </html>
